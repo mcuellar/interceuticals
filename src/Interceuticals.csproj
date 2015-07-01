@@ -1,0 +1,940 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D1F4B499-CC9B-48FD-9B12-BE54906461E6}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Interceuticals</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Interceuticals</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="OTC, Version=1.0.3161.38262, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Links.aspx.cs">
+      <DependentUpon>Links.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Promotion.aspx.cs">
+      <DependentUpon>Promotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PromotionList.aspx.cs">
+      <DependentUpon>PromotionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PromotionTest.aspx.cs">
+      <DependentUpon>PromotionTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PromotionV2.aspx.cs">
+      <DependentUpon>PromotionV2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InterWebServices.asmx.cs">
+      <DependentUpon>InterWebServices.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BetterMan\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BetterMan\ShoppingContent.aspx.cs">
+      <DependentUpon>ShoppingContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BetterWoman\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BetterWoman\ShoppingContent.aspx.cs">
+      <DependentUpon>ShoppingContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cache\CacheManager.cs" />
+    <Compile Include="Common\Classes\CellBackColorTypes.cs" />
+    <Compile Include="Common\Classes\ITC.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Classes\ITCCrossSellingProducts.cs" />
+    <Compile Include="Common\Classes\ITCCrossSellXMLReader.cs" />
+    <Compile Include="Common\Classes\ITCPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Classes\ITCPageBetterMan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Classes\ITCPageBetterWoman.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Classes\ITCPageInterceuticals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Classes\ITCPromotion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Classes\ITCShoppingCartManager.cs" />
+    <Compile Include="Common\Classes\XMlReader.cs" />
+    <Compile Include="Common\HtmlTemplates\Betterman\North.aspx.cs">
+      <DependentUpon>North.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\HtmlTemplates\Betterwoman\North.aspx.cs">
+      <DependentUpon>North.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\HtmlTemplates\Interceuticals\North.aspx.cs">
+      <DependentUpon>North.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Marketing\BetterMan.aspx.cs">
+      <DependentUpon>BetterMan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Marketing\BetterWoman.aspx.cs">
+      <DependentUpon>BetterWoman.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Notifier.aspx.cs">
+      <DependentUpon>Notifier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Util\AppLookup.cs" />
+    <Compile Include="Common\Util\EmailSender.cs" />
+    <Compile Include="Contact\BetterMan.aspx.cs">
+      <DependentUpon>BetterMan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\BetterWoman.aspx.cs">
+      <DependentUpon>BetterWoman.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\Interceuticals.aspx.cs">
+      <DependentUpon>Interceuticals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\Newsletter.aspx.cs">
+      <DependentUpon>Newsletter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\ThankYou.aspx.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\Win3.aspx.cs">
+      <DependentUpon>Win3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\Win3_bw.aspx.cs">
+      <DependentUpon>Win3_bw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\CartAbandonmentInterval.aspx.cs">
+      <DependentUpon>CartAbandonmentInterval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Checkout2.aspx.cs">
+      <DependentUpon>Checkout2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\CartAbandonment.aspx.cs">
+      <DependentUpon>CartAbandonment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\PostedMessage.aspx.cs">
+      <DependentUpon>PostedMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\PostedMessage.aspx.designer.cs">
+      <DependentUpon>PostedMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\LayoutSecure.Master.cs">
+      <DependentUpon>LayoutSecure.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\LayoutSecure.Master.designer.cs">
+      <DependentUpon>LayoutSecure.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UserControls\Footer2.ascx.cs">
+      <DependentUpon>Footer2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\UserControls\Footer2.ascx.designer.cs">
+      <DependentUpon>Footer2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UserControls\LeftSide.ascx.cs">
+      <DependentUpon>LeftSide.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\UserControls\LeftSide.ascx.designer.cs">
+      <DependentUpon>LeftSide.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebContent\Company.aspx.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order\CheckOut.aspx.cs">
+      <DependentUpon>CheckOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\CreditCard.aspx.cs">
+      <DependentUpon>CreditCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\CreditCardPost.aspx.cs">
+      <DependentUpon>CreditCardPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\PostTest.aspx.cs">
+      <DependentUpon>PostTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\PreCheckOut.aspx.cs">
+      <DependentUpon>PreCheckOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\MemberShip.aspx.cs">
+      <DependentUpon>MemberShip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Promotion.aspx.cs">
+      <DependentUpon>Promotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\SetCart.aspx.cs">
+      <DependentUpon>SetCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\X.aspx.cs">
+      <DependentUpon>X.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Reporter.aspx.cs">
+      <DependentUpon>Reporter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPicker.aspx.cs">
+      <DependentUpon>ReportPicker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Layout.Master.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\Layout.Master.designer.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UserControls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\UserControls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\UserControls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shared\UserControls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Verisign\CCEdit.aspx.cs">
+      <DependentUpon>CCEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verisign\Failed.aspx.cs">
+      <DependentUpon>Failed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verisign\Post.aspx.cs">
+      <DependentUpon>Post.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verisign\Return.aspx.cs">
+      <DependentUpon>Return.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verisign\Silent.aspx.cs">
+      <DependentUpon>Silent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verisign\SilentTest.aspx.cs">
+      <DependentUpon>SilentTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebContent\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebContent\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebContent\PrivacyPolicy.aspx.cs">
+      <DependentUpon>PrivacyPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebContent\PrivacyPolicy.aspx.designer.cs">
+      <DependentUpon>PrivacyPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebContent\UserControls\Disclaimer.ascx.cs">
+      <DependentUpon>Disclaimer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebContent\UserControls\Disclaimer.ascx.designer.cs">
+      <DependentUpon>Disclaimer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebContent\UserControls\PrivacyPolicy.ascx.cs">
+      <DependentUpon>PrivacyPolicy.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebContent\UserControls\PrivacyPolicy.ascx.designer.cs">
+      <DependentUpon>PrivacyPolicy.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebContent\UserControls\TermsOfUse.ascx.cs">
+      <DependentUpon>TermsOfUse.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebContent\UserControls\TermsOfUse.ascx.designer.cs">
+      <DependentUpon>TermsOfUse.ascx</DependentUpon>
+    </Compile>
+    <Content Include="Admin\Links.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\Login.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\Order.aspx" />
+    <Content Include="Admin\Orders.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\Product.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\Promotion.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\PromotionList.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\PromotionList.js" />
+    <Content Include="Admin\PromotionTest.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\PromotionV2.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Admin\PromotionV2.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="InterWebServices.asmx" />
+    <Content Include="BetterMan\Content.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BetterMan\Images\lev2\bmbottlesmall.jpg" />
+    <Content Include="BetterMan\Images\lev2\BMxSellChlorenergy.gif" />
+    <Content Include="BetterMan\Images\lev2\bottle.gif" />
+    <Content Include="BetterMan\Images\lev2\bwbottlesmall.jpg" />
+    <Content Include="BetterMan\Images\lev2\ordernow.gif" />
+    <Content Include="BetterMan\Images\lev2\otherproductsheader.gif" />
+    <Content Include="BetterMan\Images\lev2\pwishnow.jpg" />
+    <Content Include="BetterMan\Images\lev2\pwishnowcolor.jpg" />
+    <Content Include="BetterMan\Images\lev2\win3.gif" />
+    <Content Include="BetterMan\Images\lev2\xsellBW.jpg" />
+    <Content Include="BetterMan\Images\lev2\_xsellBW.jpg" />
+    <Content Include="BetterMan\ShoppingContent.aspx" />
+    <Content Include="BetterMan\xsellBetterman.html" />
+    <Content Include="BetterMan\xsellBetterman2.html" />
+    <Content Include="BetterWoman\Content.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="BetterWoman\images\level2\BMxsell1.jpg" />
+    <Content Include="BetterWoman\images\level2\BMxSellChlorenergy.gif" />
+    <Content Include="BetterWoman\images\level2\bottle.jpg" />
+    <Content Include="BetterWoman\images\level2\bwbottlesmall.jpg" />
+    <Content Include="BetterWoman\images\level2\chlorenergy_logo3.gif" />
+    <Content Include="BetterWoman\images\level2\company.gif" />
+    <Content Include="BetterWoman\images\level2\ordernowbutton.gif" />
+    <Content Include="BetterWoman\images\level2\xsellBM.jpg" />
+    <Content Include="BetterWoman\images\level2\xsellBM_.jpg" />
+    <Content Include="BetterWoman\images\level2\xsellBM_old.jpg" />
+    <Content Include="BetterWoman\images\level2\xSellChlorenergy.jpg" />
+    <Content Include="BetterWoman\images\level2\xSellChlorenergy_20090224.jpg" />
+    <Content Include="BetterWoman\images\level2\xSellChlorenergy_old.jpg" />
+    <Content Include="BetterWoman\images\level2\_xSellChlorenergy.jpg" />
+    <Content Include="BetterWoman\ShoppingContent.aspx" />
+    <Content Include="BetterWoman\xsellBetterwoman.html" />
+    <Content Include="BetterWoman\xsellBetterwoman2.html" />
+    <Content Include="Common\adovbs.inc" />
+    <Content Include="Common\Config\XML\CrossSellProducts.xml" />
+    <Content Include="Common\HtmlTemplates\Betterman\East.htm" />
+    <Content Include="Common\HtmlTemplates\Betterman\North.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Common\HtmlTemplates\Betterman\North.htm" />
+    <Content Include="Common\HtmlTemplates\Betterman\South.htm" />
+    <Content Include="Common\HtmlTemplates\Betterman\West.htm" />
+    <Content Include="Common\HtmlTemplates\Betterwoman\East.htm" />
+    <Content Include="Common\HtmlTemplates\Betterwoman\LoadFiles.txt" />
+    <Content Include="Common\HtmlTemplates\Betterwoman\North.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Common\HtmlTemplates\Betterwoman\North.htm" />
+    <Content Include="Common\HtmlTemplates\Betterwoman\South.htm" />
+    <Content Include="Common\HtmlTemplates\Betterwoman\West.htm" />
+    <Content Include="Common\HtmlTemplates\Interceuticals\East.htm" />
+    <Content Include="Common\HtmlTemplates\Interceuticals\North.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Common\HtmlTemplates\Interceuticals\North.htm" />
+    <Content Include="Common\HtmlTemplates\Interceuticals\South.htm" />
+    <Content Include="Common\HtmlTemplates\Interceuticals\West.htm" />
+    <Content Include="Common\HtmlTemplates\Order\BetterMan\East.htm" />
+    <Content Include="Common\HtmlTemplates\Order\BetterMan\LoadFiles.txt" />
+    <Content Include="Common\HtmlTemplates\Order\BetterMan\North.htm" />
+    <Content Include="Common\HtmlTemplates\Order\BetterMan\South.htm" />
+    <Content Include="Common\HtmlTemplates\Order\BetterMan\West.htm" />
+    <Content Include="Common\HtmlTemplates\Order\BetterWoman\East.htm" />
+    <Content Include="Common\HtmlTemplates\Order\BetterWoman\LoadFiles.txt" />
+    <Content Include="Common\HtmlTemplates\Order\BetterWoman\North.htm" />
+    <Content Include="Common\HtmlTemplates\Order\BetterWoman\South.htm" />
+    <Content Include="Common\HtmlTemplates\Order\BetterWoman\West.htm" />
+    <Content Include="Common\ie.css" />
+    <Content Include="Common\Marketing\BetterMan.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Common\Marketing\BetterWoman.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Common\Notifier.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="contactus.html" />
+    <Content Include="Contact\BetterMan.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Contact\BetterWoman.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Contact\Default.aspx" />
+    <Content Include="Contact\Interceuticals.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Contact\Newsletter.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Contact\ThankYou.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Contact\Win3.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Contact\Win3_bw.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Content.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Images\betterman_continue.gif" />
+    <Content Include="Images\Betterman_CrossSell.gif" />
+    <Content Include="Images\betterwoman_continue.gif" />
+    <Content Include="Images\company.gif" />
+    <Content Include="Images\contactus.gif" />
+    <Content Include="Images\interceuticals\contactusheader.gif" />
+    <Content Include="Images\interceuticals\pwishnowcolor.jpg" />
+    <Content Include="Images\interceuticals\whiteheader.gif" />
+    <Content Include="Images\progress1.gif" />
+    <Content Include="Images\Shared\buy_it_now_en.gif" />
+    <Content Include="Images\Shared\int_home_betterm2.png" />
+    <Content Include="Images\Shared\int_home_betterw.png" />
+    <Content Include="Images\Shared\int_home_left.png" />
+    <Content Include="Images\Shared\left_betterman.png" />
+    <Content Include="Images\Shared\left_betterwoman.png" />
+    <Content Include="Images\Shared\OrderLeftNav.png" />
+    <Content Include="Images\Shared\PhoneNumber.png" />
+    <Content Include="Images\Shared\placeorder.gif" />
+    <Content Include="Images\verisign.gif" />
+    <Content Include="Lib\AjaxControlToolkit.dll" />
+    <Content Include="Lib\OTC.dll" />
+    <Content Include="Lib\SMTPSVG.DLL" />
+    <Content Include="Order\CartAbandonmentInterval.aspx" />
+    <Content Include="Order\Checkout2.aspx" />
+    <Content Include="Order\CartAbandonment.aspx" />
+    <Content Include="Order\PostedMessage.aspx" />
+    <Content Include="Product\MembershipHtml\615.htm" />
+    <Content Include="Product\MembershipHtml\624.htm" />
+    <Content Include="Product\MembershipHtml\626.htm" />
+    <Content Include="Shared\Global.js" />
+    <Content Include="Shared\ModalStyles.css" />
+    <Content Include="Shared\UserControls\Footer2.ascx" />
+    <Content Include="Shared\UserControls\LeftSide.ascx" />
+    <Content Include="WebContent\Company.aspx" />
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Order\CheckOut.aspx" />
+    <Content Include="Order\CheckOut.js" />
+    <Content Include="Order\CreditCard.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Order\CreditCard.js" />
+    <Content Include="Order\CreditCardPost.aspx" />
+    <Content Include="Order\Default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Order\PostTest.aspx" />
+    <Content Include="Order\PreCheckOut.aspx" />
+    <Content Include="Product\Default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Product\Default.js" />
+    <Content Include="Product\MemberShip.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Product\MemberShip.js" />
+    <Content Include="Product\MembershipHtml\610.htm" />
+    <Content Include="Product\MembershipHtml\611.htm" />
+    <Content Include="Product\MembershipHtml\612.htm" />
+    <Content Include="Product\MembershipHtml\613.htm" />
+    <Content Include="Product\MembershipHtml\614.htm" />
+    <Content Include="Product\Promotion.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Product\Promotion.js" />
+    <Content Include="Product\SetCart.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Product\ShippingCost.xml" />
+    <Content Include="Product\X.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Reports\Default.aspx" />
+    <Content Include="Reports\Default.js" />
+    <Content Include="Reports\Report.aspx" />
+    <Content Include="Reports\Report.js" />
+    <Content Include="Reports\Reporter.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Reports\ReportPicker.aspx" />
+    <Content Include="Shared\Layout.css" />
+    <Content Include="Shared\UserControls\Footer.ascx" />
+    <Content Include="Shared\UserControls\Header.ascx" />
+    <Content Include="Verisign\CCEdit.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Verisign\Failed.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Verisign\Post.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Verisign\PostTest.htm" />
+    <Content Include="Verisign\Return.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Verisign\Silent.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Verisign\SilentTest.aspx" />
+    <Content Include="Verisign\Test.htm" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebContent\ContactUs.aspx" />
+    <Content Include="WebContent\PrivacyPolicy.aspx" />
+    <Content Include="WebContent\UserControls\Disclaimer.ascx" />
+    <Content Include="WebContent\UserControls\PrivacyPolicy.ascx" />
+    <Content Include="WebContent\UserControls\TermsOfUse.ascx" />
+    <EmbeddedResource Include="Admin\Links.aspx.resx">
+      <DependentUpon>Links.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Login.aspx.resx">
+      <DependentUpon>Login.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Order.aspx.resx">
+      <DependentUpon>Order.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Orders.aspx.resx">
+      <DependentUpon>Orders.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Product.aspx.resx">
+      <DependentUpon>Product.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Promotion.aspx.resx">
+      <DependentUpon>Promotion.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\PromotionList.aspx.resx">
+      <DependentUpon>PromotionList.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\PromotionTest.aspx.resx">
+      <DependentUpon>PromotionTest.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\PromotionV2.aspx.resx">
+      <DependentUpon>PromotionV2.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BetterMan\Content.aspx.resx">
+      <DependentUpon>Content.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BetterWoman\Content.aspx.resx">
+      <DependentUpon>Content.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\HtmlTemplates\Betterman\North.aspx.resx">
+      <DependentUpon>North.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\HtmlTemplates\Betterwoman\North.aspx.resx">
+      <DependentUpon>North.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\HtmlTemplates\Interceuticals\North.aspx.resx">
+      <DependentUpon>North.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Marketing\BetterMan.aspx.resx">
+      <DependentUpon>BetterMan.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Marketing\BetterWoman.aspx.resx">
+      <DependentUpon>BetterWoman.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Notifier.aspx.resx">
+      <DependentUpon>Notifier.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact\BetterMan.aspx.resx">
+      <DependentUpon>BetterMan.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact\BetterWoman.aspx.resx">
+      <DependentUpon>BetterWoman.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact\Default.aspx.resx">
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact\Interceuticals.aspx.resx">
+      <DependentUpon>Interceuticals.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact\Newsletter.aspx.resx">
+      <DependentUpon>Newsletter.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact\ThankYou.aspx.resx">
+      <DependentUpon>ThankYou.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact\Win3.aspx.resx">
+      <DependentUpon>Win3.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact\Win3_bw.aspx.resx">
+      <DependentUpon>Win3_bw.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content.aspx.resx">
+      <DependentUpon>Content.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\CheckOut.aspx.resx">
+      <DependentUpon>CheckOut.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\CartAbandonment.aspx.resx">
+      <DependentUpon>CartAbandonment.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\CreditCard.aspx.resx">
+      <DependentUpon>CreditCard.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order\Default.aspx.resx">
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\Default.aspx.resx">
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\MemberShip.aspx.resx">
+      <DependentUpon>MemberShip.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\Promotion.aspx.resx">
+      <DependentUpon>Promotion.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\SetCart.aspx.resx">
+      <DependentUpon>SetCart.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\X.aspx.resx">
+      <DependentUpon>X.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Default.aspx.resx">
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report.aspx.resx">
+      <DependentUpon>Report.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Reporter.aspx.resx">
+      <DependentUpon>Reporter.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPicker.aspx.resx">
+      <DependentUpon>ReportPicker.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verisign\CCEdit.aspx.resx">
+      <DependentUpon>CCEdit.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verisign\Failed.aspx.resx">
+      <DependentUpon>Failed.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verisign\Post.aspx.resx">
+      <DependentUpon>Post.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verisign\Return.aspx.resx">
+      <DependentUpon>Return.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verisign\Silent.aspx.resx">
+      <DependentUpon>Silent.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="BetterMan\Images\lev2\Thumbs.db" />
+    <None Include="Common\HtmlTemplates\Order\BetterMan\LoadFiles.bat" />
+    <None Include="Common\HtmlTemplates\Order\BetterWoman\LoadFiles.bat" />
+    <Content Include="Shared\Layout.Master" />
+    <Content Include="Shared\LayoutSecure.Master" />
+    <None Include="Inerceuticals-Gmail.pubxml" />
+    <None Include="Interceuticals.pubxml" />
+    <None Include="WebContent\PDF\INT0968OrderForm.pdf" />
+    <None Include="WebContent\PDF\mailfax_orderform.pdf" />
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="Common\Controls\DropDown\" />
+    <Folder Include="Images\Betterman\" />
+    <Folder Include="Logs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1944</DevelopmentServerPort>
+          <DevelopmentServerVPath>/interceuticals</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

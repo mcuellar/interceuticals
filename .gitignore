@@ -1,0 +1,5 @@
+bin
+*.vspscc
+/src/Web.config
+obj
+/src/*.user

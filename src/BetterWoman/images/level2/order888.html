@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>BetterWOMAN Testimonial</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+
+function openPopup(url, w, h) {
+//  if (typeof win == 'object') {if(!win.closed) win.close()}
+  w += 20;
+  h += 20;
+  var top  = screen.height / 2 - h / 2;
+  if (top < 0) top = 20;
+  var left = screen.width / 2 - w / 2;
+  if (left < 0) left = 20;
+
+  if (typeof win == 'object' && !win.closed) {
+    if (is.ie)  win.resizeTo(w-16,h+10);
+    if (is.ns4) win.resizeTo(w-30,h-20);
+    win.moveTo(left,top);
+  } else {
+    var options = "resizable=yes,scrollbars=no,height=" + (h-20) +
+    ",width=" + (w-20) + ",screenX=" + left + ",left=" + left +
+    ",screenY=" + top + ",top=" + top;
+    win = open('',"PopupWin",options);
+  }
+
+  if (url.search(/\.gif$|\.jpg$/) > 0) {
+    var content = '<html><body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">' +
+    '<img src="' + url + '"></body></html>';
+    url = '';
+    win.document.open();
+    win.document.write(content);
+    win.document.close();
+  } else win.location.replace(url);
+
+  win.focus();
+}
+
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<style type="text/css">
+p {font-family:Arial, Helvetica, sans-serif; font-size:13px;}
+</style>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<p>&nbsp;</p>
+<p>Place order via phone, please call toll free number 1-888-686-2698 Mon - Fri. 9:00 AM to 5:00 PM East Standard Time. If you have technical or other questions, please call 1-781-631-9154. </p>
+<p><a href="javascript:window.close();">Close Window</a></p>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+var sc_project=1740123; 
+var sc_invisible=1; 
+var sc_partition=16; 
+var sc_security="3d63102b"; 
+</script>
+
+<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script><noscript><a href="http://www.statcounter.com/" target="_blank"><img  src="http://c17.statcounter.com/counter.php?sc_project=1740123&amp;java=0&amp;security=3d63102b&amp;invisible=1" alt="php hit counter" border="0"></a> </noscript>
+<!-- End of StatCounter Code -->
+</body>
+</html>

@@ -1,0 +1,9 @@
+OPEN 64.78.12.176
+globalinfo
+global!200
+prompt n
+cd htdocs/interceuticals/Images
+mget *.gif
+mget *.jpg
+mget *.jpeg
+quit

@@ -1,0 +1,609 @@
+﻿/****************************General************************************/
+
+body {
+	line-height:1;
+	text-align:center;
+
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+
+nav ul {
+	list-style:none;
+}
+
+TD
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px
+}
+
+p 
+{
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:12px;  
+	font-style: normal; 
+	line-height: 12px; 
+	font-weight: normal;
+}
+
+h4 
+{
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:12px;
+	font-style: normal; 
+	line-height: 14px; font-weight: normal
+}
+
+h3 
+{
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:14px;
+	font-style: normal; 
+	line-height: 14px; 
+	font-weight: normal
+}
+
+h2 
+{
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:14px;
+	font-style: normal; 
+	line-height: 14px; 
+	font-weight: normal
+}
+
+.promotionProductWrapper
+{
+	overflow: auto;
+	position: static;
+	height: 75px;
+	width: 330px;
+}
+
+/*********************** Anchors ****************************/ 
+a {outline: 0;} 
+
+a img {border: 0px; text-decoration: none;} 
+
+a:link, a:visited  {
+    color: #333333;
+    padding: 0 1px;  
+    text-decoration: none;
+}
+
+a:hover, a:active  {
+    /*background-color: #C74350; */
+    color: #829ABD; 
+    text-decoration: none; 
+    /*text-shadow: 1px 1px 1px #333; */
+}
+
+ul { list-style: outside disc; margin: 1em 0 1.5em 1.5em; }
+
+/******************************************* container*****************************************/
+#masterContainer {
+	position:relative;
+	margin:0 auto;
+	background-color:#fff;
+	text-align:center;
+    width: 100%;
+}
+
+#container {
+	position:relative;
+	margin:0 auto;
+	background-color:white;
+	display: block;
+	text-align:center;
+    width: 940px;
+    padding: 8px;
+}
+
+aside {
+	display: table-cell;
+	padding: 30px;
+	border-right: thin dotted #5170AD;
+	width: 100px;
+}
+
+.sidebar {
+    display: table-cell;
+	padding: 30px;
+	border-right: thin dotted #5170AD;
+	width: 100px;
+}
+
+#mainContainer
+{
+	display: table-cell;
+	width: 835px;
+	padding: 0px 30px 30px 30px ;
+	margin:0 auto;
+	vertical-align:top;
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	word-spacing:4px;
+}   
+#mainContainer a:link
+{
+    text-decoration:underline;
+}
+
+
+.buttonStyle
+{
+    text-align: center;
+    padding-left: 180px;
+}
+
+/*******************************************header section*****************************************/
+
+#phone 
+{
+   position:relative;
+   margin: 0 auto; 
+   display: block; 
+   text-align:right;
+   width:800px;
+   padding-bottom: 15px;
+}
+
+#header {
+	position:relative;
+	width:800px;
+}
+
+
+#banner  {
+    margin: 0 auto; 
+    padding: 2.5em 0 0 0; 
+} 
+
+#banner h1 
+{
+    font-size: 3.571em; 
+    line-height: .6;
+} 
+
+#banner h1 a:link, #banner h1 a:visited  
+{
+    /*color: #333333; */
+    display: block; 
+    font-weight: bold; 
+    margin: 0 0 .6em .2em; 
+    text-decoration: none; 
+    width: 427px; } 
+    
+#banner h1 a:hover, #banner h1 a:active  
+{
+    background: none; 
+    color: #A34159; 
+    text-shadow: none; 
+}  
+
+#banner h1 strong 
+{
+    font-size: 0.36em; 
+    font-weight: normal;
+}
+
+
+/***************** Banner Section *************************************/
+
+#banner nav  
+{
+    background: #EEF2E3; 
+    font-size: 1.143em; 
+    height: 40px; 
+    line-height: 30px; 
+    /*margin: 0 auto 2em auto; */
+    padding: 0; 
+    text-align: center; 
+    width: 100%;  
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+ }
+ 
+ #banner nav ul 
+ {
+     list-style: none; 
+     margin: 0 auto; 
+     width: 800px;
+ } 
+     
+ #banner nav li 
+ {
+     float: left; 
+     display: inline; 
+     margin: 0;
+ }  
+ 
+ #banner nav a:link, #banner nav a:visited  
+ {
+     color: #333333; 
+     display: inline-block; 
+     height: 30px; 
+     padding: 5px 1.5em; 
+     text-decoration: none; 
+ } 
+ 
+ #banner nav a:hover, #banner nav a:active, #banner nav .active a:link, #banner nav .active a:visited  
+ {
+     /*background: #C74451; */
+     color: #3D61A4; 
+     text-shadow: none !important; 
+ }
+ 
+ /*****************************************main navigation*************************************/
+
+#mainNav, #mainNav ul {
+	padding:0;
+	position:relative;
+	/*line-height:18px;*/
+	z-index:300;
+	width:100%;
+	float:left;
+}
+#mainNav {
+	padding:0 0 0 300px;
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#mainNav a {
+	display:block;
+	color:white;
+	/*text-shadow: #264c6c 1px 1px 0;*/
+	text-decoration: none;
+	padding: 0 15px 3px;
+}
+#mainNav a:hover, #mainNav .current-menu-item > a {
+	color:white;
+	background:silver;
+}
+#mainNav a.current-menu-item{
+color: #000;
+font-weight:bold;
+}
+#mainNav li {
+	float:left;
+	display: inline;
+	position:relative;
+	line-height: 37px;
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+	left:50px;
+	top:0px;
+	font-size: 1.143em; 
+}
+#mainNav li li {
+	line-height: 28px;
+	position:relative;
+	left:0;
+	
+}
+#mainNav ul {
+	position:absolute;
+	display:none;
+	width:100px;
+	top:39px;
+	left:0;
+}
+#mainNav ul a {
+	border-left:1px solid #FFF;
+	border-right: 1px solid #FFF;
+	border-top:1px solid #666699;
+	background-color:#EEF2E3;
+	text-shadow: none;
+	text-align:center;
+}
+#mainNav li ul {
+	width:100px;
+	font-size:14px;
+	text-align:left;
+}
+#mainNav li ul a {
+	width:100px;
+	float:left;
+	display:inline;
+	border-bottom:1px solid #CCC;
+	text-align:left;
+}
+#mainNav ul ul {
+	top:auto;
+}
+#mainNav li ul ul {
+	left:100px;
+	margin:0 0 0 6px;
+}
+#mainNav li:hover ul ul, #mainNav li:hover ul ul ul, #mainNav li:hover ul ul ul ul {
+	display:none;
+}
+#mainNav li:hover ul, #mainNav li li:hover ul, #mainNav li li li:hover ul, #mainNav li li li li:hover ul {
+	display:block;
+} 
+
+
+ 
+ /*********************************************footer***************************************/
+ /*
+footer 
+{
+    position:relative;
+	clear:both;
+	height:30px;
+	width:960px;
+	margin:0 auto;
+	border-top: thin dotted #5170AD;
+	border-bottom: thin dotted #5170AD;
+	padding: 15px 0px 5px;
+	text-align:center;
+}
+*/
+footer span, footer address {
+	font-size: 13px;
+	text-align:center;
+	display:inline;
+	width:400px;
+}
+
+#footer 
+{
+	clear:both;
+	height:30px;
+	width:960px;
+	margin:0 auto;
+	border-top: thin dotted #5170AD;
+	border-bottom: thin dotted #5170AD;
+	padding: 15px 0px 5px;
+}
+
+
+ /*********************************************Cart***************************************/
+
+ .text-centered,  .text-centered p {
+     text-align: center !important;    
+ }
+
+
+
+#checkout {
+     text-align: left;
+     word-spacing: 1px;
+     font-size: 14px;
+ }
+
+#checkout td {
+    font-size: 14px;
+}
+
+
+/* Hide bw stuff for bm and vis-versa */
+#checkout.bm .bw, #checkout.bw .bm {
+    display: none;
+}
+
+#checkout .section {
+     margin-bottom: 40px;
+     clear: both;
+ }
+
+
+#checkout .tableWrapper {
+     border: none !important;
+     text-align: left;
+ }
+
+#checkout.bw h2,
+#checkout.bw h3,
+#checkout.bw h4,
+#checkout.bw .quotes p {
+     color: rgb(210, 98, 117);
+ }
+
+#checkout.bw #cart .tableWrapper tr:first-child td,
+#checkout.bw #cart .tableWrapper tr:first-child td {
+    background: rgb(210, 98, 117);
+}
+
+#checkout.bm h2,
+#checkout.bm h3,
+#checkout.bm h4,
+#checkout.bm .quotes p {
+     color: rgb(31, 93, 163);
+ }
+
+#checkout.bm #cart .tableWrapper tr:first-child td,
+#checkout.bm #cart .tableWrapper tr:first-child td {
+      background: rgb(31, 93, 163);
+}
+
+#checkout #cart .tableWrapper tr:first-child td {
+    color: white;
+}
+
+#checkout h3 {
+     font-weight: bold;
+     font-size: 16px;
+ }
+
+
+.productPage {
+    font-size: 13px;
+    word-spacing: 1px;
+    text-align: left;
+    font-family: Calibri, Georgia, Arial;
+}
+
+.productPage p {
+    padding-bottom: 5px;
+}
+
+    .productPage ul li {
+       padding-left: .8em; 
+       margin-bottom: .5em; 
+       list-style: circle;
+    }
+
+    .productPage ul li h1 {
+        color: #7a7a7a;
+        font-weight:bold;
+        font-size:14px;
+    }
+
+.productInfo {
+    text-align: left;
+    font-size: 14px;
+    word-spacing: 1px;
+    line-height: 16px;
+}
+
+.labelUnderlined {
+    color:red; font-size:medium;text-decoration: underline;
+}
+
+.productHeader {
+    text-align: left;
+    font-size: 14px;
+    word-spacing: 1px;
+    line-height: 16px;
+    font-weight:bold;
+}
+
+#checkout p, 
+#checkout .productInfo {
+    text-align: left;
+    font-size: 14px;
+    word-spacing: 1px;
+    line-height: 16px;
+}
+
+#checkout #billing select, 
+#checkout #billing input,
+#checkout #shipping select, 
+#checkout #shipping input[type="text"]
+ {
+    margin-left: 0px;
+    width: 172px;
+}
+
+
+#checkout #cart {
+    margin: 30px 0px;
+}
+
+
+#checkout #cart .tableWrapper tr:first-child td {
+    color: white;
+    padding: 5px 3px;
+}
+
+#checkout #cart .tableWrapper tr td {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e8e8e8;
+
+}
+
+
+#checkout #shippingMethod select {
+    width: 100% !important;
+}
+
+#checkout #banner .bm, #checkout #banner .bw,
+#checkout #shipping, #checkout #billing, #checkout #payment {
+    overflow: hidden;
+}
+
+#checkout #banner h2 {
+    margin-top: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#checkout #shipping .productInfo,
+#checkout #billing .productInfo {
+    width: 120px;
+    font-size: 14px;
+}
+
+#checkout h4 {
+    font-size: 14px;
+}
+
+#checkout #payment {
+    overflow: hidden;
+    clear: both;
+}
+
+#checkout #payment p {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+#checkout #payment .card,
+#checkout #payment .total {
+    float: left;
+    width: 300px;
+}
+
+#checkout #payment .total {
+    margin-top: 16px;
+}
+
+
+#checkout #billing table,
+#checkout #shipping table {
+    float: left;    
+}
+
+#checkout  .aside {
+    float: right;
+    width: 380px;
+    margin-top: 150px;
+}
+
+#checkout .quotes {
+    margin-top: 10px;
+}
+
+
+blockquote {
+font-family: Georgia, serif;
+font-size: 14px;
+font-style: italic;
+width: 500px;
+margin: 0.25em 0;
+padding: 0.35em 40px;
+line-height: 1.45;
+position: relative;
+color: #383838;
+}
+
+blockquote:before {
+display: block;
+padding-left: 10px;
+content: "\201C";
+font-size: 60px;
+position: absolute;
+left: -20px;
+top: -20px;
+color: #7a7a7a;
+}
+
+blockquote cite {
+color: #999999;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
+}

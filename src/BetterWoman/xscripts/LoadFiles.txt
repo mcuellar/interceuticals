@@ -1,0 +1,7 @@
+OPEN 64.78.12.176
+globalinfo
+global!200
+prompt n
+cd htdocs/interceuticals/betterwoman/xscripts
+put register_form1.asp
+quit

@@ -1,0 +1,1 @@
+<%@ Page language="c#" MasterPageFile="~/Shared/LayoutSecure.Master" Codebehind="CartAbandonmentInterval.aspx.cs" AutoEventWireup="false" EnableEventValidation="false" Inherits="Interceuticals.Order.AbandonmentInterval" %>

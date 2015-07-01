@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="Interceuticals.Shared.Layout" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ccAjax" %>
+<%@ Register src="~/Shared/UserControls/Header.ascx" tagname="Header" tagprefix="ucHeader" %>
+<%@ Register src="~/Shared/UserControls/Footer2.ascx" tagname="Footer" tagprefix="ucFooter" %>
+<%@ Register src="~/Shared/UserControls/LeftSide.ascx" tagname="LeftSide" tagprefix="ucLeftSide" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="description" content="BetterMAN and BetterWOMAN Buy Direct. Save. Ingredient Lists. How They Work. Freshest Batch.">
+    <script src="//cdn.optimizely.com/js/199776721.js"></script>
+    <link href="Layout.css" rel="stylesheet" type="text/css" />
+    <link href="ModalStyles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/interceuticals/Shared/Global.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+//        var appendGAToQueryString;
+
+//        $(document).ready(function () {
+//            //jQuery function
+//            appendGAToQueryString = function () {
+//                var cDomainUrl = "interceuticals.com";
+//                var aUrl = this.host;
+//                //alert("HREF is: " + this.href + " Host is: " + aUrl);
+//                var dUrl = "www.betterwomannow.com";
+//                var sUrl = "www.bettermannow.com";
+//                if (aUrl == dUrl || aUrl == sUrl) {
+//                    _gaq.push(['_link', this.href]); return false;
+//                }
+//            }
+//        });
+
+/*
+        $(document).ready(function () {
+		
+            $("a").click(function () {
+                var cDomainUrl = "interceuticals.com";
+                var aUrl = this.host;
+               
+                var dUrl = "www.betterwomannow.com";
+                var sUrl = "www.bettermannow.com";
+                if (aUrl == dUrl || aUrl == sUrl) {
+                    existingFunction();
+                    _gaq.push(['_link', this.href]);
+                    return false;
+                }
+            });
+        }); */
+
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
+    <script type="text/javascript" id="wa_u"></script>
+    <script type="text/javascript" src="../javascript/interceut1.js"></script>
+	
+	<script> 
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+	ga('create', 'UA-39805742-1', 'interceuticals.com'); 
+	ga('require', 'displayfeatures'); 
+	ga('send', 'pageview'); 
+	</script>
+
+
+
+    <!-- The below script Makes IE understand the new html5 tags are there and applies our CSS to it -->
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+    <![endif]-->
+    <!-- The below script Makes IE understand the new html5 tags are there and applies our CSS to it -->
+    <!--[if LTE IE 8]>
+     <link rel="stylesheet" type="text/css" href="~/Content/ie.css" media="screen" />  
+    <![endif]-->
+
+
+</head>
+<body>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MX6MWT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MX6MWT');</script>
+<!-- End Google Tag Manager -->
+
+<form name="f1" runat="server" method="post" ID="f1">
+<ccAjax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></ccAjax:ToolkitScriptManager>
+<asp:Panel ID="Panel1" runat="server">
+        <asp:ContentPlaceHolder ID="cHeader" runat="server">
+            <ucHeader:Header ID="uHeader" runat="server" />
+        </asp:ContentPlaceHolder>  
+
+        <div id="masterContainer"> 
+            <div id="container">
+                 <aside>
+                     <asp:ContentPlaceHolder ID="cLeftSide" runat="server">
+                        <ucLeftSide:LeftSide id="uLeftSide" runat="server" />
+                    </asp:ContentPlaceHolder>   
+	            </aside>
+                <div id="mainContainer">
+                      <asp:ContentPlaceHolder ID="cBody" runat="server"></asp:ContentPlaceHolder>                 
+                </div>
+
+            </div>
+         <div id="footer">
+                <asp:ContentPlaceHolder ID="cFooter" runat="server">
+                <ucFooter:Footer id="ucFooter" runat="server" />
+                </asp:ContentPlaceHolder> 
+         </div>     
+         </div>           
+       
+</asp:Panel>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1072257769;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1072257769/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+</form>
+</body>
+</html>

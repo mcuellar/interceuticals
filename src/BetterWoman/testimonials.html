@@ -1,0 +1,205 @@
+<script language="JavaScript">
+function openPopup(url, w, h) {
+//  if (typeof win == 'object') {if(!win.closed) win.close()}
+  w += 20;
+  h += 20;
+  var top  = screen.height / 2 - h / 2;
+  if (top < 0) top = 20;
+  var left = screen.width / 2 - w / 2;
+  if (left < 0) left = 20;
+
+  if (typeof win == 'object' && !win.closed) {
+    if (is.ie)  win.resizeTo(w-16,h+10);
+    if (is.ns4) win.resizeTo(w-30,h-20);
+    win.moveTo(left,top);
+  } else {
+    var options = "resizable=yes,scrollbars=no,height=" + (h-20) +
+    ",width=" + (w-20) + ",screenX=" + left + ",left=" + left +
+    ",screenY=" + top + ",top=" + top;
+    win = open('',"PopupWin",options);
+  }
+
+  if (url.search(/\.gif$|\.jpg$/) > 0) {
+    var content = '<html><body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">' +
+    '<img src="' + url + '"></body></html>';
+    url = '';
+    win.document.open();
+    win.document.write(content);
+    win.document.close();
+  } else win.location.replace(url);
+
+  win.focus();
+}
+
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+    <td width="20"><img src="Images/level2/white1.gif" width="20" height="21"></td>
+    <td width="389"><img src="Images/level2/white1a.gif" width="389" height="21"></td>
+	</tr>
+	<tr><!-- added <tr> tag -->
+      <td width="20" valign="top"><img src="Images/level2/white1.gif" width="20" height="21"></td>
+      <td width="388" valign="top">
+        <p><img src="images/level2/testimonialsheader.gif" width="389" height="22" alt="Testimonials"></p>
+        <p>&nbsp; </p>
+        <h2><b>Click on each picture below to view the testimonial.</b> </h2>
+        <p><img src="images/level2/testimonialimages5.jpg" alt="Testimonial images" width="389" height="226" border="0" usemap="#Map3" /> </p>
+        <p>
+          <map name="Map3" id="Map3">
+            <area shape="rect" coords="1,1,128,107" href="javascript:openPopup('bwfive.html',400,300)" />
+            <area shape="rect" coords="134,2,261,107" href="javascript:openPopup('bwone.html',400,300)" />
+            <area shape="rect" coords="264,2,389,107" href="javascript:openPopup('bwtwo.html',400,300)" />
+            <area shape="rect" coords="71,113,202,219" href="javascript:openPopup('bwfour.html',400,300)" />
+            <area shape="rect" coords="210,113,334,219" href="javascript:openPopup('bwthree.html',400,300)" />
+          </map>
+        </p>
+        <p><a href="#1">From Health Care Professionals</a><br />
+            <a href="#2">From BetterWOMAN users (aged 35 to 78)</a><br />
+        </p>
+        <p> </p>
+        <p><b>F<a name="1" id="1"></a>rom Health Care Professionals</b> </p>
+        <p><b>Lawrence Dorman, DO, Applewood Medical Center, Missouri</b> &#150; 
+          &quot;The majority of my patients (ranging in age from 37 to 73) have 
+          noticed dramatic improvements in their urinary control issues within 4 
+          to 8 weeks of taking BetterWOMAN. One patient has MS with several years 
+          of incontinence history. After one bottle, she started to see improvements. 
+          Another patient is in a wheel chair due to a rare neuronal disease. Her 
+          incontinence symptom was greatly relieved after 60 days. I am very happy 
+          with the results.&quot; </p>
+        <p><b>P. Cutler, MD, PC. Niagara Falls, NY</b> &#150; &quot;I am very happy 
+          with the responses from my patients. They are mostly women over 60, and 
+          many of them saw improvements within 20 days. One young 28-year-old woman 
+          had severe stress urinary incontinence with undetectable health conditions. 
+          She did not respond to hormone treatment. I treated her with BetterWOMAN, 
+          and her stress incontinence stopped completely within one month.&quot; </p>
+        <p><b>Gary Kracoff, R.Ph. Johnson Drug, Waltham, MA</b> &#150; &quot;I never 
+          realized how big this problem was. We have already had many better women! 
+          The majority of the customers start to see improvements within the first 
+          10-20 days. Nearly all customers have continued to use BetterWOMAN. A 
+          woman in her 70s told me that she was housebound, and now she can go out 
+          and enjoy her life again. What a relief!&quot; </p>
+        <p><b>F<a name="2" id="2"></a>rom BetterWOMAN users (aged 37 to 78)</b> </p>
+        <p><b>Marian, 60</b> <b>&#150; a case with over 30 years of bladder control 
+          problems.</b> &quot;I started to notice bladder control problems 30 years 
+          ago after I had a C-section. Ten years ago, I had a hysterectomy. After 
+          that, incontinence became a big problem. I did not know when an accident 
+          would happen. I was afraid to go out, even with pads. I started to seek 
+          medical treatment about 4 years ago and had been taking medication for 
+          4 years. One drug helped me a bit, but made me very dry. I felt my throat
+          was on fire all the time. My husband saw BetterWOMAN information and bought 
+          3 bottles for me to try. I noticed very obvious improvement within just 
+          days. Now I am on my 4th bottle, I am off the medication, and I can go 
+          out without being afraid. I am so happy!&quot; </p>
+        <p><b>Marian, 44 &#150; a typical case for women after multiple childbirth.</b> &quot;Like many of my girl friends, I started to experience slight urine 
+          leakage after I had my second child. After the third child, the situation 
+          became more of an issue. I noticed leakage when I sneeze, laugh, or when 
+          I get out bed in the morning. Gradually, I also started to notice urgency 
+          in urination when I entered into the peri -menopausal phase. I thought 
+          this was part of the aging process until I tried BetterWOMAN. It took 
+          me a while to notice improvement. In the beginning, I noticed almost nothing. 
+          While I was on the third bottle, my urinary urgency greatly improved. 
+          On my 4th bottle, I felt I did not have the leakage any more when I laugh 
+          or sneeze. I am in my 6th bottle now and I have started to notice an improvement 
+          in my libido. It has calmed my peri-menopausal symptoms such as hot flashes 
+          and night sweats. I am very happy with BetterWOMAN. I am convinced. I 
+          believe in a product that works slowly into my system rather than hormone 
+          replacement.&quot; </p>
+        <p><b>Jennifer &#150; a typical case of women in mid 50s.</b> &quot;I am 
+          54. In the last 6 months my symptoms were a) take a sip of anything and 
+          need to go &quot;immediately&quot;, which is especially difficult if you are driving! 
+          b) Had trouble holding it when trying to find a bathroom fast, c) had 
+          to go constantly, d) incontinence when cough or sneeze, e) going 1-3 times 
+          during the night. I went into Olivers Market in Cotati and asked the girl 
+          in the vitamin department if there was anything to help urinary issues. 
+          She recommended BetterWoman. I had immediate results on my first bottle; 
+          it helped me to not have to go &quot;immediately&quot;, and not so often. It got 
+          even better on my second bottle; I am now able to hold it like a normal 
+          person and don't need to go as often during the night; have even had nights 
+          where I haven't had to go at all. I am about to start my third bottle. 
+          I am so glad I found your product.&quot; </p>
+        <p><b>Jane, 78 &#150; a case with improved bladder control, saved money 
+          on diapers, regained confidence. </b>&quot;I used to wet myself almost 
+          every time I felt the urge to go to the bathroom. The urine seemed to 
+          have its own life and just came down. I hated to be homebound all the 
+          time. I hated that this issue dominated my life. But I had no control. 
+          I spent an average of $30 monthly on diapers and protective pads. I talked 
+          to my girl friends and almost all of them have this problem. My daughter 
+          attended a medical conference and she introduced me BetterWOMAN. I noticed 
+          big improvement after only TWO bottles&#151;the leakage became much less 
+          of an issue. After 3 bottles, the situation is mostly under control. I 
+          am overjoyed! I am myself again.&quot; </p>
+        <p><b>Delsa, 55 &#150; a typical case for women in menopausal phase.</b> &quot;I am a nurse working in an emergency room. It is not easy for me 
+          to deal with my urine leakage problem. Whenever I sneezed, coughed or 
+          bent, I got wet. I noticed obvious improvements after 2 bottles of BetterWOMAN.
+          Now I very rarely get wet. It's a great product.&quot; </p>
+        <p><b>Melissa, 50 &#150; a case of improved in urinary urgency.</b> &quot;I 
+          had to stop drinking water two days before I visit my dentist because 
+          I was afraid of having an 'accident'. I found BetterWOMAN through an online 
+          search. After 2 bottles, I noticed big differences. I feel I am a new 
+          person now. My confidence has come back.&quot; </p>
+        <p><b>Cindy, 69 &#150; a case of improved leakage, frequency and regained 
+          confidence.</b> &quot;I don't need to think about the location of the 
+          next bathroom anymore. I can laugh fully and freely without concern. I've 
+          got my dependable body back again! Also, after 6 bottles, I started to 
+          notice a sensation of improved libido&#151;a long forgotten feeling. That 
+          is really wonderful!&quot; </p>
+        <p><b>Maria, 37 &#150; a case of improved frequent urination.</b> &quot;I 
+          have had a bladder problem since my second child. For the past year, I 
+          had to use the bathroom just about every hour. I hated to spend so much 
+          of my life in the bathroom! After taking BetterWOMAN, I can last 4 hours 
+          now!&quot; </p>
+        <p><b>Dana, 55 &#150; a case of improved urinary frequency and nighttime 
+          sleep.</b> &quot;I used to get up 4-5 times a night. I was told it was 
+          normal at this age. My friend told me about BetterWOMAN. Now, I rarely 
+          get up anymore. I can sleep through most of the night. What a difference 
+          with my energy level during the day! I love it.&quot; </p>
+        <p><b>Joyce, 50 &#150; a case of improved urine leakage and menopausal symptoms.</b> &quot;I just started to enter the peri-menopausal phase. I noticed that 
+          I started to get wet sometimes when I laughed very hard. I did not even 
+          know that was the early symptoms of stress urinary incontinence. After 
+          I tried 2 bottles of BetterWOMAN, not only did the leakage became much 
+          less a problem, my menopausal symptoms have improved a lot&#151;much less 
+          night sweats and migraines associated with menopause.&quot; </p>
+        <p><b>Elaine, 74 &#150; improved sexual libido.</b> &quot;I've noticed a 
+          wonderful 'side effect' of regularly taking BetterWOMAN &#150; I want 
+          to have intercourse with my 84 year old hubby EVERY DAY!&quot; (Her hubby 
+          is taking BetterMAN &#150; also by Interceuticals at <a href="http://www.bettermannow.com" target="display">www.BetterMANnow.com</a> ) </p>
+        <p><b>Lynn, 52 &#150; improved menopausal symptoms.</b> &quot;After taking 
+          BetterWOMAN for 3 months, I noticed the frequency of my night sweats reduced 
+          quite a bit. I sleep better and find it much easier to concentrate during 
+          the day.&quot; </p>
+        <p><b>Julie, 37 &#150; improved energy levels.</b> &quot;My energy level 
+          has improved a lot. I do not feel tired so frequently. I also lost several
+          extra pounds because now I have the energy to exercise after work!&quot; </p>
+        <p><a href="#top"><img src="images/level2/backtotopbutton.gif" width="96" height="18" border="0" alt="Back to Top" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <script type="text/javascript">document.write('<a href="javascript:__utmLinker(\'https://localhost/interceuticals/product/default.aspx?site=_bw\');"><img src="images/level2/ordernowbutton.gif" width="96" height="18" alt="Order Now" border="0"></a>');</script>
+        </p>
+        <noscript>
+        <a href="https://localhost/interceuticals/product/default.aspx?site=_bw"><img src="images/level2/ordernowbutton.gif" width="96" height="18" alt="Order Now" border="0" /></a>
+        </noscript>
+        </p>
+      </td>
+	</tr>
+      </table>

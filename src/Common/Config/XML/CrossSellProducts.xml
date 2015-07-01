@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<crosssellproducts>
+  <products site="bw">
+    <masterproduct htmlname="xsellBetterwoman">
+      <message><![CDATA[<font size='3'><b>BetterMAN for Men's Bladder Problems</b></font><br>]]></message>
+      <image path="../BetterWoman/images/level2/xsellBM.jpg"><![CDATA[../BetterWoman/ShoppingContent.aspx?CTF=xsellBetterwoman&hide=W]]></image>
+      <imageTag>
+        <![CDATA[<img src="../Betterman/Images/lev2/bmbottlesmall.jpg" border="0"  align="left" style="margin-bottom:2px;">]]>
+      </imageTag>
+      <product>
+        <offer><![CDATA[4 btl- $149.97 (<font color='red'>25% Off</font>)]]></offer>
+        <productID>611</productID>
+      </product>
+      <product>
+        <offer>1 btl- $49.99</offer>
+        <productID>610</productID>
+      </product>
+    </masterproduct>
+    <masterproduct htmlname="xsellBetterwoman2">
+      <message><![CDATA[<font size='3'><b>Green Algae Relieves Constipation</b></font><br>]]></message>
+      <image path="../BetterWoman/images/level2/xSellChlorenergy.jpg"><![CDATA[../BetterWoman/ShoppingContent.aspx?CTF=xsellBetterwoman2&hide=W]]></image>
+      <imageTag>
+        <![CDATA[<img src="../BetterWoman/images/level2/chlorenergy_logo3.gif" border="0"  align="left" style="margin-bottom:2px;">]]>
+      </imageTag>
+      <product>
+        <offer><![CDATA[3 pks - $69.99 (<font color='red'>20% Off</font>)]]></offer>
+        <productID>629</productID>
+      </product>
+      <product>
+        <offer>1 pk - $29.99</offer>
+        <productID>628</productID> 
+      </product>
+    </masterproduct>    
+   </products>
+  <products site="bm">
+    <masterproduct htmlname="xsellBetterman">
+      <message><![CDATA[<font size='3'>Did you know we also have <b>BetterWOMAN</b> for woman?</font><br>]]></message>
+      <image path="../BetterMan/images/lev2/xsellBW.jpg"><![CDATA[../BetterMan/ShoppingContent.aspx?CTF=xsellBetterman&hide=W]]></image>
+      <imageTag>
+        <![CDATA[<img src="../BetterWoman/images/level2/bwbottlesmall.jpg" border="0"  align="left" style="margin-bottom:2px;">]]>
+      </imageTag>
+      <product>
+        <offer><![CDATA[4 btls - $119.96 (<font color='red'>$40.00 Off</font>)]]></offer>
+        <productID>614</productID>
+      </product>
+      <product>
+        <offer>1 btl - $39.99</offer>s
+        <productID>613</productID>
+      </product>
+    </masterproduct>
+    <masterproduct htmlname="xsellBetterman2">
+      <message><![CDATA[<font size='3'>Do you know that <b>constipation</b> may worsen bladder control?<br>]]></message>
+      <image path="../BetterWoman/images/level2/xSellChlorenergy.jpg"><![CDATA[../BetterMan/ShoppingContent.aspx?CTF=xsellBetterman2&hide=W]]></image>
+      <imageTag>
+        <![CDATA[<img src="../BetterWoman/images/level2/chlorenergy_logo3.gif" border="0"  align="left" style="margin-bottom:2px;">]]>
+      </imageTag>
+      <product>
+        <offer><![CDATA[3 pks - $69.99 (<font color='red'>20% Off</font>)]]></offer>
+        <productID>629</productID>
+      </product>
+      <product>
+        <offer>1 pk - $29.99</offer>
+        <productID>628</productID>
+      </product>
+    </masterproduct>    
+  </products>
+</crosssellproducts>

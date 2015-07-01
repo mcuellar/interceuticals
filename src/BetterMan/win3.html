@@ -1,0 +1,188 @@
+<script>
+function isGood()
+{	var strMsg, fOk;
+	var ctlEmail = document.form1.email;
+	var ctlFirstname = document.form1.firstname;
+	var ctlLastname = document.form1.lastname;
+	var ctlAddress1 = document.form1.address1;
+	var ctlCity = document.form1.city;
+	var ctlState = document.form1.state;
+	var ctlZip = document.form1.zip;
+	var ctlCountry = document.form1.country;
+
+	fOk = true;
+
+	if((ctlEmail.value).length==0)
+   {
+    fOk = false;
+    strMsg = "Email Address is a required field.";
+    ctlEmail.focus();
+   }
+  else
+  {
+    if((ctlFirstname.value).length==0)
+   {
+    fOk = false;
+    strMsg = "First Name is a required field.";
+    ctlFirstname.focus();
+   }  else  {		if((ctlFirstname.value).length==0)
+   {
+    fOk = false;
+    strMsg = "First Name is a required field.";
+    ctlFirstname.focus();
+   }
+  else  {		if((ctlLastname.value).length==0)
+   {
+    fOk = false;
+    strMsg = "Last Name is a required field.";
+    ctlLastname.focus();
+   }  else  {		if((ctlAddress1.value).length==0)
+   {
+    fOk = false;
+    strMsg = "Street Address is a required field.";
+    ctlAddress1.focus();
+   }
+  else  {		if((ctlCity.value).length==0)
+   {
+    fOk = false;
+    strMsg = "City is a required field.";
+    ctlCity.focus();
+   }  else  {		if((ctlState.value).length==0)
+   {
+    fOk = false;
+    strMsg = "State is a required field.";
+    ctlState.focus();
+   }
+  else  {		if((ctlZip.value).length==0)
+   {
+    fOk = false;
+    strMsg = "Zip Code is a required field.";
+    ctlZip.focus();
+   }  else  {		if((ctlCountry.value).length==0)
+   {
+    fOk = false;
+    strMsg = "Country is a required field.";
+    ctlCountry.focus();
+   }  }
+  }  }
+  }  }
+  }  }  }    if (fOk)
+  {
+		document.form1.submit();
+  }
+  else
+    alert(strMsg);
+}
+</script>
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+    <td width="20"><img src="Images/lev2/white1.gif" width="20" height="21"></td>
+    <td width="389"><img src="Images/lev2/white1a.gif" width="389" height="21"></td>
+	</tr>
+	<tr><!-- added <tr> tag -->
+      <td width="20" valign="top"><img src="../images/lev2/whiteheader.gif" width="20" height="43"></td>
+      <td width="388" valign="top">
+        <p><img src="Images/lev2/headers/win3header.gif" width="389" height="22"></p>
+        <h3><b>of BetterMAN&reg;&#151;ENTER NOW!<br />
+          A $135 Value!!</b></h3>
+        <p>To participate in this drawing, please follow these simple rules. All 
+          communications will be kept confidential. Your name and address will NOT 
+          be sold or distributed to other companies. The Drawing will be held monthly. </p>
+        <p>At the end of each month, we will collect all entries for that month 
+          and randomly pick out one (1) lucky winner. Winners will be contacted 
+          via email to confirm delivery address for your <b>3 FREE</b> bottles of 
+          BetterMAN.</p>
+        <ol>
+          <li> You must be at least 18 years old to enter </li>
+          <li>Enter email if you wish to receive free e-Newsletters </li>
+          <li> One entry only per email or household </li>
+          <li>Please enter the following information</li>
+        </ol>
+        <form name="form1" method="post" action="xscripts/register_form1.asp?tag=prize&page=win3&contactType=5" id="form1">
+          <!-- <form action="comments.asp" method="post">-->
+          <table width="380" border="0">
+            <tr>
+              <td><table width="380" border="0">
+                  <tr>
+                    <td width="97" align="right"><b>Where did you hear about BetterMAN:</b></td>
+                    <td width="273"><br />
+                        <input type="text" name="betterman" size="40" />
+                        <br />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="97" align="right"><b>Email Address:</b></td>
+                    <td width="273"><input type="text" name="email" size="40" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="97" align="right"><b>First Name:</b></td>
+                    <td width="273"><input type="text" name="firstname" size="40" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="97" align="right"><b>Last Name:</b></td>
+                    <td width="273"><input type="text" name="lastname" size="40" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="97" align="right"><b>Company:</b></td>
+                    <td width="273"><input type="text" name="company" size="40" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="97" align="right" valign="top"><b>Street Address:</b></td>
+                    <td width="273"><input type="text" name="address1" size="40" />
+                        <br />
+                        <input type="text" name="address2" size="40" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="97" align="right"><b>City:</b></td>
+                    <td width="273"><input type="text" name="city" size="40" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="97" align="right"><b>State:</b></td>
+                    <td width="273"><input type="text" name="state" size="2" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="97" align="right"><b>Zip Code:</b></td>
+                    <td width="273"><input type="text" name="zip" size="10" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="97" align="right"><b>Country:</b></td>
+                    <td width="273"><input type="text" name="country" size="30" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="97" align="right"><b>Phone:</b></td>
+                    <td width="273"><input type="text" name="phone" size="18" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="97" align="right" valign="top"><b>Comments:</b></td>
+                    <td width="273"><textarea name="comments" rows="5" cols="30" wrap="wrap"></textarea>
+                    </td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td align="right"><p align="right">
+                  <input type="button" value="Send it Now!" id="submit1" name="submit1" onclick="isGood()"/>
+                  <input type="reset" name="Reset" value="Reset" />
+                  <br />
+              </p></td>
+            </tr>
+          </table>
+        </form>
+        <p>Thank you for your participation. Check our web site monthly for news 
+          updates and special offers. </p>
+        <p>&nbsp;</p>
+        <p align="left"><a href="#top"><img src="Images/lev2/backtotop.gif" width="79" height="15" border="0" alt="Back to Top" /></a></p>
+        <p align="left">&nbsp;</p>
+	  </td>
+		</tr>
+      </table>
