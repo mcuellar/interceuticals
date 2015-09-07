@@ -89,7 +89,8 @@ namespace Interceuticals.Product
 							item.Selected = true;
 						haveSelection = true;
 					}
-					this.ddProducts.Items.Add(item);
+                    if(!ddProducts.Items.Contains(item))
+                        this.ddProducts.Items.Add(item);
 				}
 				
 				if(Convert.ToBoolean(Session["wantsMembership"]))

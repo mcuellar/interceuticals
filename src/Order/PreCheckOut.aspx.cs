@@ -90,9 +90,11 @@ namespace Interceuticals.Order
         {
             string key = "";
 
-            if (Request.ServerVariables["HTTP_HOST"] == "localhost" || Request.ServerVariables["HTTP_HOST"] == "cjeycjey.homedns.org:9001" || Request.ServerVariables["HTTP_HOST"] == "olympic.homedns.org:9001" || Request.ServerVariables["HTTP_HOST"] == "localhost:2535" || Request.ServerVariables["HTTP_HOST"] == "68.14.68.91:40401")
+            string host = Request.ServerVariables["HTTP_HOST"];
+
+            if (host == "localhost" || host == "cjeycjey.homedns.org:9001" || host == "olympic.homedns.org:9001" || host == "localhost:2535" || host == "68.14.68.91:40401")
                 Response.Redirect("/interceuticals/order/PreCheckOut.aspx?" + Request.QueryString.ToString() + "&PID2=" + m_productID + "&SCID=" + this.m_page.ShoppingCartId + "&site=" + Session["site"] + "&" + (key.Length > 0 ? "?PKY=" + key : ""));
-            else if (AppLookup.ServerHttpHost == "interceuticals.serveronline.net")
+            else if (host == "interceuticals.serveronline.net")
                 Response.Redirect("http://interceuticals.serveronline.net/interceuticals/order/Precheckout.aspx?" + Request.QueryString.ToString() + "&PID2=" + m_productID + "&SCID=" + this.m_page.ShoppingCartId + "&site=" + Session["site"] + "&" + (key.Length > 0 ? "?PKY=" + key : ""));
             else
                 Response.Redirect("https://www.interceuticals.com/interceuticals/order/PreCheckOut.aspx?" + Request.QueryString.ToString() + "&PID2=" + m_productID + "&SCID=" + this.m_page.ShoppingCartId + "&site=" + Session["site"] + "&" + (key.Length > 0 ? "?PKY=" + key : ""));
@@ -252,7 +254,9 @@ namespace Interceuticals.Order
             {
                 string baseUrl = "http://www.interceuticals.com/interceuticals/product/default.aspx";
 
-                if (AppLookup.ServerHttpHost.IndexOf("localhost") > -1)
+                string host = Request.ServerVariables["HTTP_HOST"];
+
+                if (host.IndexOf("localhost") > -1)
                     baseUrl = "/interceuticals/product/default.aspx";
  
                 Response.Write("<br><br><div align=\"center\" class=\"tableFont\"><font color=\"red\">You have no items in your bag!</font><br><a href=\"" + baseUrl + (this.m_page.IsBetterWoman ? "?site=bw" : "") + "\"><font class=\"tableFont\">continue shopping</a></div><br><br>");

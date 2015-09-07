@@ -114,9 +114,11 @@ namespace Interceuticals.BetterWoman
         {
             string key = "";
 
+            string host = Request.ServerVariables["HTTP_HOST"];
+
             if (Request.ServerVariables["HTTP_HOST"].IndexOf("localhost") > -1 || Request.ServerVariables["HTTP_HOST"] == "cjeycjey.homedns.org:9001" || Request.ServerVariables["HTTP_HOST"] == "olympic.homedns.org:9001" || Request.ServerVariables["HTTP_HOST"] == "68.14.68.91:40401" || Request.ServerVariables["HTTP_HOST"] == "qa.interceuticals.com")
                 Response.Redirect("../order/PreCheckOut.aspx?" + getQueryString());
-            else if (AppLookup.ServerHttpHost == "interceuticals.serveronline.net")
+            else if (host == "interceuticals.serveronline.net")
                 Response.Redirect("http://interceuticals.serveronline.net/interceuticals/order/PreCheckOut.aspx?" + getQueryString());
             else
                 Response.Redirect("https://www.interceuticals.com/interceuticals/order/PreCheckOut.aspx?" + getQueryString());

@@ -45,10 +45,10 @@ namespace Interceuticals.Product
 				string key = "";
 
                 string host = Request.ServerVariables["HTTP_HOST"];
-
-                if (AppLookup.ServerHttpHost.IndexOf("localhost") > -1 || Request.ServerVariables["HTTP_HOST"] == "cjeycjey.homedns.org:9001" || Request.ServerVariables["HTTP_HOST"] == "68.14.68.91:40401")
+                
+                if (host.IndexOf("localhost") > -1 || host == "cjeycjey.homedns.org:9001" || host == "68.14.68.91:40401")
 					Response.Redirect("/interceuticals/order/precheckout.aspx?" + Request.QueryString.ToString() + "&PID2=" + productId + "&SCID=" + this.m_page.ShoppingCartId + "&site=" + Session["site"] + "&" + (key.Length > 0 ? "?PKY=" + key : ""));
-                else if (AppLookup.ServerHttpHost == "interceuticals.serveronline.net")
+                else if (host == "interceuticals.serveronline.net")
                     Response.Redirect("http://interceuticals.serveronline.net/interceuticals/order/precheckOut.aspx?" + Request.QueryString.ToString() + "&PID2=" + productId + "&SCID=" + this.m_page.ShoppingCartId + "&site=" + Session["site"] + "&" + (key.Length > 0 ? "?PKY=" + key : ""));
                 else
                     Response.Redirect("https://www.interceuticals.com/interceuticals/order/precheckout.aspx?" + Request.QueryString.ToString() + "&PID2=" + productId + "&SCID=" + this.m_page.ShoppingCartId + "&site=" + Session["site"] + "&" + (key.Length > 0 ? "?PKY=" + key : ""));
