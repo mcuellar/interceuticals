@@ -894,6 +894,7 @@
     <Content Include="Shared\Layout.Master" />
     <Content Include="Shared\LayoutSecure.Master" />
     <None Include="Inerceuticals-Gmail.pubxml" />
+    <None Include="Interceuticals-Legacy.pubxml" />
     <None Include="Interceuticals.pubxml" />
     <None Include="WebContent\PDF\INT0968OrderForm.pdf" />
     <None Include="WebContent\PDF\mailfax_orderform.pdf" />
